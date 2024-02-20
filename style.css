@@ -1,7 +1,12 @@
 @font-face {
-    font-family: 'SF Pro';
-    src: url(/SFProDisplay-Thin/SFProDisplay-Thin.ttf)
-}
+    font-family: 'San Francisco Pro';
+    src: local('San Francisco Pro Display Thin'), local('San-Francisco-Pro-Display-Thin'),
+        url('./Fonts/SFPro.woff2') format('woff2'),
+        url('./Fonts/SFPro.woff') format('woff'),
+        url('./Fonts/SFPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
 
 * {
     padding: 0;
@@ -32,6 +37,8 @@ body {
 
 .calculator_screen_tablo {
     color: #ffffff;
+    font-family: 'San Francisco Pro';
+    font-weight: 274;
     font-size: 90px;
     width: 100%;
     background-color: transparent;
@@ -52,7 +59,7 @@ body {
     height: 88px;
     border: none;
     border-radius: 100%;
-    font-family: SF Pro;
+    font-family: 'San Francisco Pro';
     color: #ffffff;
     font-size: 40px;
     font-weight: 400;
