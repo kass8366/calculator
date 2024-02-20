@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url(/SFProDisplay-Thin/SFProDisplay-Thin.ttf)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    width: 428px;
+    height: 926px;
+    border-radius: 30px;
+    background-color: #000000;
+}
+
+.calculator_screen {
+    width: 428px;
+    height: 346px;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.calculator_screen_tablo {
+    color: #ffffff;
+    font-size: 90px;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.calculator_buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 10px 17px;
+}
+
+.button {
+    width: 88px;
+    height: 88px;
+    border: none;
+    border-radius: 100%;
+    font-family: SF Pro;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+    background-color: #A5A5A5;
+}
+
+.button_zero {
+    width: 190px;
+    border-radius: 352px;
+}
+
+.button_gray {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.button_orange {
+    background-color: #f1a33b;
+    color: #ffffff;
+}
+
+.button:hover {
+    background-color: #b5af96;
+  }
